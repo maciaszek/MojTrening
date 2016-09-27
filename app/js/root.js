@@ -2,6 +2,11 @@
 
 angular.module('app')
   .controller('RootController', ['$scope', '$modal', function ($scope, $modal) {
+    
+    $scope.$on('$routeChangeSuccess',function(e,current, previus){
+      $scope.currentRoute = current;
+    });
+    
       $scope.showWorkoutHistory = function () {
           var dailog = $modal.open({
               templateUrl: 'partials/workout-history.html',

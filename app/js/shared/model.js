@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 /* Klasy modelu */
 angular.module('app')
